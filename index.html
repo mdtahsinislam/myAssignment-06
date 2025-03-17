@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng janala</title>
+
+     <!-- daisyui cdn -->
+
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+     <style>
+       #category-container{
+        
+       }
+       #category-container {
+    display: flex; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+}
+ #word-container{
+    margin-top: 30px;
+    
+} 
+.active{
+    background-color: aqua;
+    text-decoration-color: lightgray;
+}
+.hidden {
+            display: none;
+        }
+     </style>
+</head>
+<body>
+    <header class="border-b-2 py-2 border-[#17171720] shadow-lg hidden " id="headerr">
+        <nav class="w-11/12 mx-auto flex justify-between ">
+            <div class="flex gap-1">
+               <h2 class="font-bold">English</h2>
+               <img src="./assets/logo.png" alt="">
+               <h2 class="font-semibold">জানালা</h2> 
+            </div>
+            <div class="flex gap-2 ">
+                <button id="faqBtn" class="btn btn-outline btn-primary scroll-smooth " ><img src="./assets/fa-circle-question.png" alt=""> FAQ</button> 
+                <button id="lea" class="btn btn-outline btn-primary"><img src="./assets/fa-book-open.png" alt="">Learn</button>
+                <button class="btn btn-outline btn-primary"><img src="./assets/fa-arrow-right-from-bracket.png" alt="">Logout</button>
+            </div>
+        </nav>
+
+    </header>
+
+<main class="w-11/12 mx-auto">
+
+   
+<section class="grid grid-cols-2" id="Ban">
+    <div class="pt-20 ">
+<h1 class=" text-4xl font-bold"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
+<h2 class="pt-8">আজ থেকেই  আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি নতুন হন আথবা <br>আপনার দক্ষতা বাড়াতে চান ,আমাদের Interactive Lesson আপনাকে নিয়ে যাবে আন‍্য একটি Level এ</h2>
+<div class="py-5"><input id="name" cla type="text" placeholder="Enter your Name" class="input" /></div>
+<div class="py-5"><input id="password" type="password" placeholder=" Password 123456" class="input" /></div>
+<button id="A" class="btn btn-primary " onclick="checkLogin()">Get Started</button>
+
+    </div>
+    <div>
+        <img src="./assets/hero-student.png" alt="">
+    </div>
+</section>
+
+
+
+<section class="hidden" id="B">
+    <h2 id="Lea" class=" text-4xl font-bold py-5 mb-6 text-center"><span class="text-[#00BCFF]"> Let's</span> Learn Vocabularies</h2>
+   
+
+    <div id="category-container"></div>
+    
+   
+<!-- 
+    loader -->
+
+    <section id="loader" class="text-center py-1 hidden">
+        <span class="loading loading-dots loading-xl"></span>
+    </section>
+
+ 
+
+
+<section id="word-container" class="w-11/12 mx-auto grid grid-cols-3 gap-5">
+
+<div id="n " class="bg-[#F8F8F8] rounded-md text-center  mt-8 col-span-full " >
+    <div><h3  class="font-semibold text-[#79716B] py-6">আপনি এখনো কোন Lesson Select করেন নাই </h3></div>
+    <div><h1 class="font-bold text-[#292524] text-4xl pb-8">একটি Lesson Select করুন।</h1></div>
+</div>
+</section>
+</section>
+
+<section id="faqSection" class="hidden" id="">  <!-- acording -->
+    <div>
+        
+        <h2 class=" text-4xl font-bold py-5 mb-6 text-center"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
+    </div > 
+    <div class=""><!---according-->
+        <div class="collapse collapse-plus bg-base-100 border border-base-300 mb-5">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div  class="collapse-title font-semibold">1. How can I start learning English on this website ?</div>
+            <div class="collapse-content text-sm">At first vsit website than select lesson then you can learn.</div>
+          </div>
+          <div class=" mb-5 collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">2.Is this website free to use ?</div>
+            <div class="collapse-content text-sm">Yes this website is free to use</div>
+          </div>
+          <div class=" mb-5 collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">3. Do you need to create an account ?</div>
+            <div class="collapse-content text-sm">Yes</div>
+          </div>
+        
+          <div class=" mb-5 collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">4. How can i build my English vocabulary ?</div>
+            <div class="collapse-content text-sm">At first visit website than select lesson then you can learn.</div>
+          </div>
+          <div class=" mb-5 collapse collapse-plus bg-base-100 border border-base-300">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold">5. Do you offer certificates for compleated course ?</div>
+            <div class="collapse-content text-sm">Yes </div>
+          </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+
+
+
+</main>
+<section class=" bg-white shadow-lime-50 mt-36" id="" >
+    <div class="w-11/12 mx-auto flex  justify-between ">
+        <div class="">
+            <div class="flex gap-1 ">
+                <h2 class="font-bold">English</h2>
+                <img src="./assets/logo.png" alt="">
+                <h2 class="font-semibold">জানালা</h2> 
+             </div>
+             <div class="py-3"><h3>ইংরেজি শিখুন সহজে</h3></div>
+             <div class="py-2"><h3>Providing ED-Tech Application since 2025</h3></div>
+        </div>
+        <div>
+            <h3 class="text-gray-500">FOLLOW US</h3>
+            <div class="flex gap-1"> <img src="./assets/fb-thumb.png" alt=""><img src="./assets/instagram-thumb.png" alt=""><img src="./assets/youtube-thumb.png" alt=""><img src="./assets/github-thumb.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("faqBtn").addEventListener("click", function () {
+            document.getElementById("faqSection").scrollIntoView({ behavior: "smooth" });
+        });
+
+        document.getElementById("lea").addEventListener("click", function () {
+            document.getElementById("Lea").scrollIntoView({ behavior: "smooth" });
+        });
+
+
+    });
+
+
+
+</script>
+
+<script src="./Script/index.js"></script>
+
+<section class="">
+  <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+ <div id="details-container"></div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close Modal</button>
+      </form>
+    </div>
+  </div>
+  
+</dialog>
+   
+</section>
+
+
+<section>
+    
+   
+</section>
+</body>
+</html>
