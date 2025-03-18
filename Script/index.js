@@ -68,6 +68,7 @@ if(words.length==0){
 </div>
 
 </div>`;
+hideloader();
     return;
 }
 
