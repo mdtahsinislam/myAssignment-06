@@ -1,14 +1,8 @@
 ### WELCOME TO ASSIGNMENT-006
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
-## Private Repo Link : https://classroom.github.com/a/JPUEMrmw
-
- **📅 Deadline For 60 marks**: 17th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 50 marks**: 19th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 30 marks**: Any time after  19th March , 2025
-
+##  Repo Link : https://github.com/mdtahsinislam/myAssignment-06
+## live link : https://euphonious-lokum-4cea80.netlify.app/
 ---
 ⚡ API Endpoints
 ---
